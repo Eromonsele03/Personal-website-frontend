@@ -1,8 +1,195 @@
-<!Doctype HTML>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <title> Personal website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>David's Digital Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        img {
+
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        header {
+            /* background-color: #f5f5f5; */
+            padding: 1em;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+
+        }
+
+        nav {
+            width: 70%;
+            margin-left: 350px;
+            /* text-align: center; */
+            /* margin: 1em 0; */
+            background-color: #f5f5f5;
+            padding: 10px;
+
+
+        }
+
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            position: relative;
+            padding: 20px;
+
+
+        }
+
+        nav a:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 20px;
+            width: 3px;
+            background-color: hwb(0 2% 92%)
+        }
+
+        .intro {
+            padding: 2em;
+            max-width: 600px;
+            margin: auto;
+            padding-right: 800px;
+        }
+
+        .intro h1 {
+            font-size: 2em;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            margin: 2em;
+            padding-left: 300px;
+        }
+
+        .service-box {
+            background-color: #f4c7ab;
+            padding: 1em;
+            border-radius: 25px;
+            text-align: center;
+            width: 210px;
+        }
+
+        .service-box img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em;
+            border-top: 1px solid #ccc;
+            margin-top: 2em;
+            margin-left: 200px;
+        }
+
+        .social-icons a {
+            margin: 8px;
+            text-decoration: none;
+            font-size: 1.5em;
+            color: black;
+        }
+
+        .services-title {
+            font-size: 25px;
+            padding-left: 740px;
+            margin-top: 1px;
+        }
+
+        .work-title {
+            font-size: 35px;
+            margin-right: 200px;
+            margin-bottom: 5px;
+
+        }
+    </style>
 </head>
+
 <body>
-  <h1>Hello World</h1>
+    <header>
+        <!-- Home | Select | Checkout -->
+        <nav>
+            <a href="/">Home</a>
+            <a href="/">Select</a>
+            <a href="/">Checkout</a>
+        </nav>
+    </header>
+
+    <div class="intro">
+        <h1 class="introduction">Hi, I'm <strong>David</strong>.</h1>
+        <p class="work-title">I offer professional digital services to bring your ideas to life.</p>
+    </div>
+    <!-- 
+    <h2 style="text-align:center;">WHAT I OFFER</h2> -->
+    <h2 class="services-title">WHAT I OFFER</h2>
+    <div class="services">
+
+        <div class="service-box">
+            <img src="images/graphic-design-2.jpg" alt="Graphics Design" />
+            <p><strong>Graphics Design</strong></p>
+        </div>
+        <div class="service-box">
+            <img src="images/web-dev-1.jpg" alt="Website Design" />
+            <p><strong>Website design</strong></p>
+        </div>
+        <div class="service-box">
+            <img src="images/SEO-1.jpg" alt="SEO Optimization" />
+            <p><strong>SEO optimization</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        <hr style=" width: 600px; border: 1px solid #130808; margin-right: 200px;">
+        <p>FOLLOW ME ON SOCIAL MEDIA</p>
+        <div class="social-icons">
+            <!-- <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Email</a> -->
+            <a href=" https://facebook.com" target="_blank">
+                <i class="fab fa-facebook">
+
+                </i>
+            </a>
+            <a href=" https://twitter.com" target="_blank">
+                <i class="fab fa-twitter">
+
+                </i>
+            </a>
+            <a href=" https://instagram.com" target="_blank">
+                <i class="fab fa-instagram">
+
+                </i>
+                <a>
+
+                    <a href=" https://gmail.com" target="_blank">
+                        <i class="fas fa-envelope">
+
+                        </i>
+                    </a>
+        </div>
+    </footer>
 </body>
+
 </html>
